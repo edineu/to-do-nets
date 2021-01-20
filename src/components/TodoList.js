@@ -1,17 +1,12 @@
-//imported components
-import Todo from "./Todo";
+//import components
 
-const TodoList = () => {
-    return (
-        <div className="todo-container">
-            <ul className="todo-list">
-                <Todo />
-                <Todo />
-                <Todo />
-                <Todo />
-            </ul>
-        </div>
-    );
+const TodoList = ({ todos }) => {
+  console.log(todos);
+  return (
+    <div className="todo-container">
+      <ul className="todo-list"></ul>
+    </div>
+  );
 };
 
 export default TodoList;

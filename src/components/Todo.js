@@ -1,6 +1,6 @@
 const Todo = () => {
   return (
-    <div className="">
+    <div className="tod-do">
       <li className="todo-items"> HEY</li>
       <button className="fas fa-check">
         <i className="complete-btn"></i>

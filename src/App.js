@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./App.css";
+import "./App.css";
 // imported components
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
@@ -10,6 +10,7 @@ function App() {
   const [inputText, setInputText] = useState("");
   // Here setup the array of objects (test, complete, add id
   const [todos, setTodos] = useState([]);
+
   return (
     <div className="App">
       <header>
@@ -21,7 +22,7 @@ function App() {
         inputText={inputText}
         setInputText={setInputText}
       />
-      <TodoList />
+      <TodoList todos={todos} />
     </div>
   );
 }
