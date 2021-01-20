@@ -12,7 +12,7 @@ You choose if you want to do the classic Todo-app, or something else. The functi
 
 - Client-side state handling, where you get and set relevant values. You can either use a data storage library, roll your own solution, or use the bare minimum.
 
-• A custom hook. It could be something with data fetching, scroll restoration, or whatever you like.
+      • A custom hook. It could be something with data fetching, scroll restoration, or whatever you like.
 
 It would be nice with a couple of notes about how you approached the problem (bottom-up or top-down, and so on).
 
