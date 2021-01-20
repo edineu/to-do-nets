@@ -1,13 +1,22 @@
-const Form = ({ setInputText }) => {
+const Form = ({ setInputText, todos, setTodos, inputText }) => {
   // add functionality in here
   const inputTextHandler = (e) => {
         console.log(e.target.value);
         setInputText(e.target.value)
   };
+// This will prevent the page refresh every time you add
+  const submitTodoHandler = (e) => {
+    e.preventDefault();
+    setTodos([
+      // if i have any todos parce them
+      ...todos,
+      { text: inputText, completed: false, id: Math.random() * 1000 }
+    ])
+  };
     return (
 <form>
       <input onChange={inputTextHandler} type="text" className="todo-input" />
-      <button className="todo-button" type="submit">
+      <button onClick={submitTodoHandler} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
       <div className="select">

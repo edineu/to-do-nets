@@ -7,14 +7,14 @@ function App() {
   // function that allows you to change the states
   // the info is stored
   const [inputText, setInputText] = useState("");
-  // Here setup the array of objects
+  // Here setup the array of objects (test, complete, add id
   const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <header>
         <h1>Ed's Todo List{inputText}</h1>
       </header>
-      <Form setInputText={setInputText} />
+      <Form todos={todos} setTodos={setTodos} setInputText={setInputText} />
       <TodoList />
     </div>
   );
