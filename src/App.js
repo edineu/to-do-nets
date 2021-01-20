@@ -4,13 +4,15 @@ import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 
 function App() {
-  const [inputText, setInput];
+  // function that allows you to change the states
+  // the info is stored
+  const [inputText, setInputText] = useState("");
   return (
     <div className="App">
       <header>
-        <h1>Ed's Todo List</h1>
+        <h1>Ed's Todo List{inputText}</h1>
       </header>
-      <Form />
+      <Form setInputText={setInputText} />
       <TodoList />
     </div>
   );
