@@ -1,3 +1,5 @@
+import React from "react";
+
 const Form = ({ setInputText, todos, setTodos, inputText }) => {
   // add functionality in here
   const inputTextHandler = (e) => {
@@ -11,11 +13,12 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
       // if i have any todos parce them
       ...todos,
       { text: inputText, completed: false, id: Math.random() * 1000 }
-    ])
+    ]);
+    //Set the input text to zero
   };
     return (
 <form>
-      <input onChange={inputTextHandler} type="text" className="todo-input" />
+      <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>

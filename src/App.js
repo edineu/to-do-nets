@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from "./App.css";
 // imported components
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
@@ -12,9 +13,14 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Ed's Todo List{inputText}</h1>
+        <h1>Ed's Todo List</h1>
       </header>
-      <Form todos={todos} setTodos={setTodos} setInputText={setInputText} />
+      <Form
+        todos={todos}
+        setTodos={setTodos}
+        inputText={inputText}
+        setInputText={setInputText}
+      />
       <TodoList />
     </div>
   );
