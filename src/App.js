@@ -10,6 +10,8 @@ function App() {
   const [inputText, setInputText] = useState("");
   // Here setup the array of objects (test, complete, add id
   const [todos, setTodos] = useState([]);
+  const [status, setStatus] = useState("all");
+  const [filteredTodos, setFilteredTodos] = useState([]);
 
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
         setTodos={setTodos}
         inputText={inputText}
         setInputText={setInputText}
+        setStatus={setStatus}
       />
       <TodoList setTodos={setTodos} todos={todos} />
     </div>
