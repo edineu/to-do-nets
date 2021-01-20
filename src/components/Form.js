@@ -3,7 +3,6 @@ import React from "react";
 const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
   // add functionality in here
   const inputTextHandler = (e) => {
-    console.log(e.target.value);
     setInputText(e.target.value);
   };
   // This will prevent the page refresh every time you add
