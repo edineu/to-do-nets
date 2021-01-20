@@ -7,6 +7,8 @@ function App() {
   // function that allows you to change the states
   // the info is stored
   const [inputText, setInputText] = useState("");
+  // Here setup the array of objects
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <header>
