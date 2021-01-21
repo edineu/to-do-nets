@@ -1,17 +1,10 @@
+// imported components
 import React, { useState, useEffect } from "react";
-// styling
-import GlobalStyle from "./globalStyles";
-import "./App.css";
-// Navagation
-import { Route, BrowserRouter as Router } from "react-router-dom";
-import Nav from "./_Nav";
-import About from "./_Nav";
-import Shop from "./_Shop";
-// Components
-import Form from "./components/Form";
-import TodoList from "./components/TodoList";
+import TodoList from "../components/TodoList";
+import Form from "../components/Form";
+// import GlobalStyle from "./globalStyles";
 
-function App() {
+function Home() {
   // State STUFF function that allows you to change the states
   // Declare a new state variable, which we'll call later
   const [inputText, setInputText] = useState("");
@@ -62,28 +55,25 @@ function App() {
 
   return (
     <>
-      <Route>
-        <GlobalStyle />
-        <div className="App">
-          <header>
-            <h1>Ed's Todo List</h1>{" "}
-          </header>
-          <Form
-            todos={todos}
-            setTodos={setTodos}
-            inputText={inputText}
-            setInputText={setInputText}
-            setStatus={setStatus}
-          />
-          <TodoList
-            filteredTodos={filteredTodos}
-            setTodos={setTodos}
-            todos={todos}
-          />
-        </div>
-      </Route>
+      <div className="Home">
+        <header>
+          <h1>Ed's To-do List FE Chalenge</h1>
+        </header>
+        <Form
+          todos={todos}
+          setTodos={setTodos}
+          inputText={inputText}
+          setInputText={setInputText}
+          setStatus={setStatus}
+        />
+        <TodoList
+          filteredTodos={filteredTodos}
+          setTodos={setTodos}
+          todos={todos}
+        />
+      </div>
     </>
   );
 }
 
-export default App;
+export default Home;

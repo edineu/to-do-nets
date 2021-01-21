@@ -9,6 +9,29 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
+
+.nav {
+  display: flex;
+  font-family: UniNeueRegular, sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background: #fff;
+  transform: translateY(0) scale(1);
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
 header {
   font-size: 2rem;
 }
