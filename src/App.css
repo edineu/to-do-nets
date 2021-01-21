@@ -19,13 +19,13 @@ body {
   font-size: 13px;
   justify-content: space-around;
   align-items: center;
-  min-height: 7vh;
+  min-height: 4.5vh;
   background: #fff;
   transform: translateY(0) scale(1);
 }
 
 .nav-links {
-  width: 50%;
+  width: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
