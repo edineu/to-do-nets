@@ -18,11 +18,8 @@ You choose if you want to do the classic Todo-app, or something else. The functi
 
       • A custom hook. It could be something with data fetching, scroll restoration, or whatever you like.
         // For Hooks I have use useState
-            // Run once when the app start
-            // Declare a new state variable, which we'll call "count"
-              useEffect(() => {
-                getLocalTodos();
-              }, []);
+        // Declare a new state variable, which we'll call later
+            const [inputText, setInputText] = useState("");
 
 It would be nice with a couple of notes about how you approached the problem (bottom-up or top-down, and so on).
 
