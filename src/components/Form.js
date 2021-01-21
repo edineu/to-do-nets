@@ -1,4 +1,4 @@
-import React from "react";
+//import components
 
 const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
   // add functionality in here

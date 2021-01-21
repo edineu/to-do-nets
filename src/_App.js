@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
-import GlobalStyle from "../src/globalStyles";
+// styling
+import GlobalStyle from "./globalStyles";
 import "./App.css";
-// imported components
+// Navagation
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import Nav from "./_Nav";
+import About from "./_Nav";
+import Shop from "./_Shop";
+// Components
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 
@@ -56,24 +62,26 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
-      <div className="App">
-        <header>
-          <h1>Ed's Todo List</h1>{" "}
-        </header>
-        <Form
-          todos={todos}
-          setTodos={setTodos}
-          inputText={inputText}
-          setInputText={setInputText}
-          setStatus={setStatus}
-        />
-        <TodoList
-          filteredTodos={filteredTodos}
-          setTodos={setTodos}
-          todos={todos}
-        />
-      </div>
+      <Route>
+        <GlobalStyle />
+        <div className="App">
+          <header>
+            <h1>Ed's Todo List</h1>{" "}
+          </header>
+          <Form
+            todos={todos}
+            setTodos={setTodos}
+            inputText={inputText}
+            setInputText={setInputText}
+            setStatus={setStatus}
+          />
+          <TodoList
+            filteredTodos={filteredTodos}
+            setTodos={setTodos}
+            todos={todos}
+          />
+        </div>
+      </Route>
     </>
   );
 }
