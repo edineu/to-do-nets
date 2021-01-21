@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import GlobalStyle from "../src/globalStyles";
 import "./App.css";
 // imported components
 import Form from "./components/Form";
@@ -6,11 +7,13 @@ import TodoList from "./components/TodoList";
 
 function App() {
   // State STUFF function that allows you to change the states
+  // Declare a new state variable, which we'll call later
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
 
+  // For Hooks I have use useState
   // Run once when the app start
   useEffect(() => {
     getLocalTodos();
@@ -53,7 +56,7 @@ function App() {
 
   return (
     <>
-      {" "}
+      <GlobalStyle />
       <div className="App">
         <header>
           <h1>Ed's Todo List</h1>{" "}

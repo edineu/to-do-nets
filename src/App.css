@@ -20,21 +20,38 @@ form {
   justify-content: center;
   align-items: center;
 }
+
+form::placeholder {
+  color: green;
+  font-size: 0.4rem;
+}
+
+form input {
+  padding-left: 18px;
+  padding-top: 8px;
+}
+
+form input:focus {
+  outline: 0;
+}
+
 form input,
 form button {
-  padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: white;
+  background: #ebebeb;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
 }
+
 form button {
-  color: #ff6f47;
+  color: #ed8b00;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #005776;
   color: white;
 }
 .todo-container {
@@ -54,6 +71,7 @@ form button:hover {
   font-size: 1.5rem;
   color: black;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
@@ -127,7 +145,7 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #ed8b00;
   cursor: pointer;
   pointer-events: none;
 }
