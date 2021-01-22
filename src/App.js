@@ -1,10 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// Navigation//
+import Nav from "./Pages/Nav";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Shop from "./Pages/Shop";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome, let's get some TO-DO list boddy!</h1>
+    <div>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/About" component={About} />
+          <Route path="/Shop" component={Shop} />
+          <Route path="/" render={() => <div>404</div>} />
+        </Switch>
+        <div className="App"> </div>
+      </Router>
     </div>
   );
 }
