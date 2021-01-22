@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: UniNeueRegular, sans-serif;
   min-height: 100vh;
 }
 
@@ -22,6 +22,7 @@ body {
   min-height: 4.5vh;
   background: #fff;
   transform: translateY(0) scale(1);
+  border-bottom: solid 1px #cdcccf;
 }
 
 .nav-links {
@@ -32,26 +33,67 @@ body {
   list-style: none;
 }
 
+.navStyleHeader {
+  list-style: none;
+}
+.About,
+.Shop {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+._homeLink {
+  color: #000;
+  text-decoration: none;
+}
+
 header {
-  font-size: 2rem;
+  font-family: "UniNeueBold", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  position: relative;
+  color: rgb(0, 87, 118);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 2.5rem;
+  bottom: -20px;
+  border-radius: 2px;
+  background: rgb(237, 139, 0);
+}
+
+form {
+  background-color: #c9e9fb;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 header,
 form {
-  min-height: 20vh;
+  margin: 60px 0;
+  /*min-height: 20vh;*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-form::placeholder {
-  color: green;
-  font-size: 0.4rem;
+input::placeholder {
+  height: 50px;
+  padding-right: 8px;
+  padding-left: 16px;
+  font-size: 16px;
 }
 
 form input {
   padding-left: 18px;
   padding-top: 8px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
 }
 
 form input:focus {
@@ -60,23 +102,38 @@ form input:focus {
 
 form input,
 form button {
-  font-size: 2rem;
+  padding: 0.5rem 1rem 0.5rem 0.8rem;
+  font-size: 1.5rem;
   border: none;
-  background: #ebebeb;
-  border-bottom-left-radius: 100px;
-  border-top-left-radius: 100px;
+  background-color: #fff;
+  line-height: 2.4rem;
+  outline: 0;
 }
 
 form button {
-  color: #ed8b00;
-  background: #f7fffe;
+  color: #fff;
+  background-color: #ed8b00;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 }
+
 form button:hover {
   background: #005776;
   color: white;
+  outline: 0;
 }
+
+form button::focus {
+  outline: 0;
+}
+
+form button:active {
+  outline: none;
+  border: none;
+}
+
 .todo-container {
   display: flex;
   justify-content: center;
@@ -90,25 +147,38 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: white;
+  background-color: #ebebeb;
   font-size: 1.5rem;
   color: black;
   display: flex;
-
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 }
 .filter-todo {
   padding: 1rem;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 }
 .todo li {
   flex: 1;
 }
 
+.trash-btn {
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  outline: 0;
+}
+
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background-color: #ed8b00;
   color: white;
   border: none;
   padding: 1rem;
@@ -117,6 +187,7 @@ form button:hover {
 }
 .complete-btn {
   background: rgb(11, 212, 162);
+  outline: 0;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -125,6 +196,7 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+  outline: 0;
 }
 
 .fall {
@@ -145,7 +217,7 @@ select {
   appearance: none;
   outline: 0;
   box-shadow: none;
-  border: 0 !important;
+  /*border: 0 !important;*/
   background-image: none;
 }
 
@@ -157,9 +229,12 @@ select {
 }
 select {
   color: #ff6f47;
-  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-family: UniNeueRegular, sans-serif;
   cursor: pointer;
   width: 12rem;
+  border: none;
+  background-color: #fff;
 }
 /* Arrow */
 .select::after {
@@ -171,6 +246,8 @@ select {
   background: #ed8b00;
   cursor: pointer;
   pointer-events: none;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 }
 /* Transition */
 /*

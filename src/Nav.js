@@ -8,7 +8,9 @@ function Nav() {
 
   return (
     <nav className="nav">
-      <h3>Two pages routing</h3>
+      <Link className="_homeLink" to="/">
+        <h3>Pages routing</h3>
+      </Link>
       <ul className="nav-links">
         <Link style={navStyle} to="/">
           <li>Home</li>
