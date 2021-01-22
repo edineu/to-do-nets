@@ -12,8 +12,8 @@ You choose if you want to do the classic Todo-app, or something else. The functi
 
 - At least two more pages with routing for going back and forth between them.
       Two pages has been added 
-            - About 
-            - Shop
+          //  - About 
+          //  - Shop
             
 
 - Client-side state handling, where you get and set relevant values. You can either use a data storage library, roll your own solution, or use the bare minimum.
