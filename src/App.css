@@ -10,36 +10,12 @@ body {
   min-height: 100vh;
 }
 
-.nav {
-  display: flex;
-  font-family: UniNeueRegular, sans-serif;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 13px;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 4.5vh;
-  background: #fff;
-  transform: translateY(0) scale(1);
-  border-bottom: solid 1px #cdcccf;
-}
-
 .nav-links {
   width: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-}
-
-.navStyleHeader {
-  list-style: none;
-}
-
-._homeLink {
-  color: #000;
-  text-decoration: none;
 }
 
 header {

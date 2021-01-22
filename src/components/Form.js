@@ -1,5 +1,4 @@
 //import components
-import styled from "styled-components";
 
 const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
   // add functionality in here
@@ -23,14 +22,6 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
   };
 
   // Styled component named StyledButton
-  const StyledButton = styled.button`
-    background-color: #ed8b00;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-  `;
 
   return (
     <form>

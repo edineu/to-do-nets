@@ -1,6 +1,6 @@
 import "./App.css";
 // Navigation//
-import Nav from "./Nav";
+import Nav from "./Pages/Nav";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Shop from "./Pages/Shop";
