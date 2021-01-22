@@ -11,6 +11,10 @@ You choose if you want to do the classic Todo-app, or something else. The functi
 - A login (just fake a login function with a promise) - it should ideally validate the input fields.
 
 - At least two more pages with routing for going back and forth between them.
+      Two pages has been added 
+            - About 
+            - Shop
+            
 
 - Client-side state handling, where you get and set relevant values. You can either use a data storage library, roll your own solution, or use the bare minimum.
       Folder: App.js
