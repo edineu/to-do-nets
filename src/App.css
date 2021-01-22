@@ -36,14 +36,6 @@ body {
 .navStyleHeader {
   list-style: none;
 }
-.About,
-.Shop {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-}
 
 ._homeLink {
   color: #000;

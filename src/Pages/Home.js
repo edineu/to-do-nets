@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import TodoList from "../components/TodoList";
 import Form from "../components/Form";
-// import GlobalStyle from "./globalStyles";
 
 function Home() {
   // State STUFF function that allows you to change the states
